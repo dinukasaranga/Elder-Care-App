@@ -1,0 +1,62 @@
+.camera-view {
+  position: relative;
+
+  .camera-image {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .camera-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    color: #fff;
+    font-size: 14px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+
+    p {
+      margin: 0;
+      line-height: 1.2;
+    }
+  }
+
+  .camera-rectangle {
+    position: absolute;
+    border: 2px solid #fff;
+    box-sizing: border-box;
+    pointer-events: none;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 4px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+  }
+
+  .camera-rectangle-top-left {
+    top: 0;
+    left: 0;
+  }
+
+  .camera-rectangle-top-right {
+    top: 0;
+    right: 0;
+  }
+
+  .camera-rectangle-bottom-left {
+    bottom: 0;
+    left: 0;
+  }
+
+  .camera-rectangle-bottom-right {
+    bottom: 0;
+    right: 0;
+  }
+}
